@@ -1,0 +1,15 @@
+<?php
+$html = xem_web($page);
+$title = RemoveHtml(explode_by('html5player.setVideoTitle(',');',$html));
+$title_en = $title;
+$director = 'NA';
+$actor = 'NA';
+$duration1 = RemoveHtml(explode_by('<span class="duration">','min',$html));
+$duration = $duration.' phút';
+$tinhtrang = RemoveHtml(explode_by('<span class="video-hd-mark">','</span>',$html));
+$big_image = RemoveHtml(explode_by('<label>Thời lượng:</label>','</li>',$html));
+$thumb = RemoveHtml(explode_by('html5player.setThumbUrl169(',');',$html));
+	$country = 3;
+	$category = 44;
+
+?>

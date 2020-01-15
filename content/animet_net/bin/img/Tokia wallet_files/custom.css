@@ -1,0 +1,124 @@
+﻿#auth .auth-wrapper .content-container .auth-content .social-logins .Facebook-login {
+    display: block;
+    background-color: #3b5998;
+}
+#auth .auth-wrapper .content-container .auth-content .social-logins .Google-login {
+    display: block;
+    background-color: #4285f4;
+}
+form .form-error-msg {
+    display: block;
+    padding: 0;
+}
+
+#popup {
+    visibility: hidden;
+}
+
+.promo-code {
+    display:none;
+}
+
+.promo-code.show {
+    display: block;
+}
+
+.tabs-nav a {
+    width: 50%
+}
+
+.payment-form .calculator .btn-pay .pay:hover {
+    background-image: linear-gradient(to right, #12b2a5 0%, #04df8a 50%);
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#popup.show {
+    visibility: visible;
+    -webkit-animation: fadeIn 0.5s;
+    animation: fadeIn 0.5s
+}
+
+.btn-green.transactions-pay {
+    margin: 0;
+}
+
+.note-close.red-x {
+    display: none !important;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .content {
+        padding: 30px;
+    }
+}
+
+.payment-form .promo-code input {
+    width: 160px
+
+}
+
+a.btn-green {
+    font-size: 15px !important;
+    text-decoration: none !important;
+    padding: 12px 20px
+}
+@media all {
+    @media (min-width: 768px) {
+        ul.language-switch {
+            position: relative;
+            top: 14px;
+            left: 500px
+        }
+    }
+    @media (min-width: 992px) {
+        ul.language-switch {
+            position: relative;
+            top: 14px;
+            left: 720px
+        }
+    }
+    @media (min-width: 1200px) {
+        ul.language-switch {
+            position: relative;
+            top: 14px;
+            left: 920px
+        }
+    }
+}
+ul.language-switch.hidden {
+    display: block !important;
+    z-index: -1;
+
+}
+ul.language-switch {
+    list-style-type: none
+}
+.language-switch li img {
+    width: 40px;
+}
+.language-switch .current-lang {
+    display: none;
+}
+
